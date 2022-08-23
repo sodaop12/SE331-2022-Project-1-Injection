@@ -1,26 +1,95 @@
-import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { createRouter, createWebHistory } from 'vue-router'
+import PatientListView from '../views/PatientListView.vue'
+import PatientLayout from '../views/patient/PatientLayout.vue'
+import PatientDetail from '../views/patient/PatientDetailView.vue'
+import VaccineDetail from '../views/patient/VaccineDetailView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
+import NetworkErrorView from '../views/NetworkErrorView.vue'
+import nProgress from 'nprogress'
+import PatientService from '@/services/PatientService'
+import GStore from '@/store'
 
 const routes = [
   {
-    path: "/",
-    name: "home",
-    component: HomeView,
+    path: '/',
+    name: 'PatientList',
+    component: PatientListView,
+    props: (route) => ({
+      page: parseInt(route.query.page) || 1,
+      limit: 5
+    })
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: '/patient/:id',
+    name: 'PatientLayout',
+    component: PatientLayout,
+    props: true,
+    beforeEnter: (to) => {
+      return PatientService.getPatient(to.params.id)
+        .then((response) => {
+          GStore.patient = response.data
+        })
+        .catch((error) => {
+          if (error.response && error.response.status == 404) {
+            return {
+              name: '404Resources',
+              params: { resource: 'patient' }
+            }
+          } else {
+            return { name: 'NetworkError' }
+          }
+        })
+    },
+    children: [
+      {
+        path: '',
+        name: 'VaccineDetail',
+        props: true,
+        component: VaccineDetail
+      },
+      {
+        path: '',
+        name: 'PatientDetail',
+        props: true,
+        component: PatientDetail
+      }
+    ]
   },
-];
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: NotFoundView
+  },
+  {
+    path: '/404/:resource',
+    name: '404Resource',
+    component: NotFoundView,
+    props: true
+  },
+  {
+    path: '/network-error',
+    name: 'NetworkError',
+    component: NetworkErrorView
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
+})
 
-export default router;
+router.beforeEach(() => {
+  nProgress.start()
+})
+router.afterEach(() => {
+  nProgress.done()
+})
+
+export default router
