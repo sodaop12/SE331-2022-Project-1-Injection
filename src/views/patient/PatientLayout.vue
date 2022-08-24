@@ -4,7 +4,7 @@
     <div id="nav">
       <router-link :to="{ name: 'PatientDetail' }">Details</router-link>
       |
-      <router-link :to="{ name: 'VaccineDetail' }">Register</router-link>
+      <router-link :to="{ name: 'VaccineDetail' }">Vaccine</router-link>
     </div>
     <router-view :patient="patient" />
   </div>

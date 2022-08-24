@@ -1,12 +1,8 @@
-\
 <template>
-  <p>{{ patient.name }}</p>
-  <p>{{ patient.surname }}</p>
-  <p>{{ patient.homeTown }}</p>
-  <p>{{ patient.age }}</p>
-  <p>{{ patient.vaccinateStatus }}</p>
-  <p>{{ patient.firstDose }}</p>
-  <p>{{ patient.secondDose }}</p>
+  <p>{{ patient.name }} {{ patient.surname }}</p>
+  <p>Address: {{ patient.homeTown }}</p>
+  <p>Age: {{ patient.age }}</p>
+  <p>Number of dose: {{ patient.vaccinateStatus }}</p>
 </template>
 
 <script>
