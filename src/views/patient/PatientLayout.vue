@@ -4,6 +4,8 @@
       <router-link :to="{ name: 'PatientDetail' }">Details</router-link>
       |
       <router-link :to="{ name: 'VaccineDetail' }">Vaccine</router-link>
+      |
+      <router-link :to="{ name: 'DoctorComment' }">Review</router-link>
     </div>
     <router-view :patient="GStore.patient" />
   </div>

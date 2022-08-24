@@ -3,6 +3,7 @@ import PatientListView from "../views/PatientListView.vue";
 import PatientLayout from "../views/patient/PatientLayout.vue";
 import PatientDetail from "../views/patient/PatientDetailView.vue";
 import VaccineDetail from "../views/patient/VaccineDetailView.vue";
+import DoctorComment from "../views/patient/DoctorReviewView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import NetworkErrorView from "../views/NetworkErrorView.vue";
 import nProgress from "nprogress";
@@ -52,6 +53,12 @@ const routes = [
         name: "PatientDetail",
         props: true,
         component: PatientDetail,
+      },
+      {
+        path: "",
+        name: "DoctorComment",
+        props: true,
+        component: DoctorComment,
       },
     ],
   },
