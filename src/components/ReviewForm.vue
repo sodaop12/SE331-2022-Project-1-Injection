@@ -7,7 +7,7 @@
     <label for="review">Review:</label>
     <textarea id="review" v-model="review"></textarea>
 
-    <input class="button" type="submit" value="Submit" />
+    <input class="button" type="submit" value="Submit" @click="addReview" />
   </form>
 </template>
 
