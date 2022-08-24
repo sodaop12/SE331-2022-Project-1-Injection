@@ -8,7 +8,9 @@
         "age": "29",
         "vaccinateStatus": "Second dose",
         "firstDose": "Pfizer",
-        "secondDose": "Janssen"
+        "secondDose": "Janssen",
+        "firstDate": "22/8/20",
+        "secondDate": "31/11/21"
       },
       {
         "id": 2,
@@ -18,7 +20,9 @@
         "age": "52",
         "vaccinateStatus": "First dose",
         "firstDose": "Moderna",
-        "secondDose": "-"
+        "secondDose": "-",
+        "firstDate": "15/7/22",
+        "secondDate": "-"
       },
       {
         "id": 3,
@@ -27,8 +31,10 @@
         "homeTown": "9728 North Ridgewood Drive Randallstown, MD 21133",
         "age": "16",
         "vaccinateStatus": "Second dose",
-         "firstDose": "Moderna",
-         "secondDose": "Sinopharm"
+        "firstDose": "Moderna",
+        "secondDose": "Sinopharm",
+        "firstDate": "15/7/20",
+        "secondDate": "24/9/20"
       },
       {
         "id": 4,
@@ -38,7 +44,9 @@
         "age": "37",
         "vaccinateStatus": "Second dose",
         "firstDose": "Oxford",
-        "secondDose": "Janssen"
+        "secondDose": "Janssen",
+        "firstDate": "27/6/20",
+        "secondDate": "30/10/20"
       },
       {
         "id": 5,
@@ -48,7 +56,9 @@
         "age": "21",
         "vaccinateStatus": "First dose",
         "firstDose": "Moderna",
-        "secondDose": "-"
+        "secondDose": "-",
+        "firstDate": "15/4/21",
+        "secondDate": "-"
       },
       {
         "id": 6,
@@ -58,7 +68,9 @@
         "age": "65",
         "vaccinateStatus": "Second dose",
         "firstDose": "Sputnik V",
-        "secondDose": "Janssen"
+        "secondDose": "Janssen",
+        "firstDate": "22/1/22",
+        "secondDate": "13/3/22"
       },
       {
         "id": 7,
@@ -68,7 +80,9 @@
         "age": "17",
         "vaccinateStatus": "First dose",
         "firstDose": "Sinopharm",
-        "secondDose": "-"
+        "secondDose": "-",
+        "firstDate": "15/7/21",
+        "secondDate": "-"
       },
       {
         "id": 8,
@@ -78,7 +92,9 @@
         "age": "12",
         "vaccinateStatus": "First dose",
         "firstDose": "Pfizer",
-        "secondDose": "-"
+        "secondDose": "-",
+        "firstDate": "24/2/22",
+        "secondDate": "-"
       },
       {
         "id": 9,
@@ -88,7 +104,9 @@
         "age": "42",
         "vaccinateStatus": "Second dose",
         "firstDose": "Pfizer",
-        "secondDose": "Oxford"
+        "secondDose": "Oxford",
+        "firstDate": "31/11/21",
+        "secondDate": "2/4/22"
       },
       {
         "id": 10,
@@ -98,7 +116,9 @@
         "age": "26",
         "vaccinateStatus": "Second dose",
         "firstDose": "Pfizer",
-        "secondDose": "Pfizer"
+        "secondDose": "Pfizer",
+        "firstDate": "10/10/21",
+        "secondDate": "12/11/21"
       },
       {
         "id": 11,
@@ -108,7 +128,9 @@
         "age": "29",
         "vaccinateStatus": "Second dose",
         "firstDose": "Sinopharm",
-        "secondDose": "Pfizer"
+        "secondDose": "Pfizer",
+        "firstDate": "6/4/20",
+        "secondDate": "17/8/20"
       },
       {
         "id": 12,
@@ -118,7 +140,9 @@
         "age": "39",
         "vaccinateStatus": "First dose",
         "firstDose": "Sputnik V",
-        "secondDose": "-"
+        "secondDose": "-",
+        "firstDate": "20/8/20",
+        "secondDate": "-"
       },
       {
         "id": 13,
@@ -128,7 +152,9 @@
         "age": "73",
         "vaccinateStatus": "First dose",
         "firstDose": "Pfizer",
-        "secondDose": "-"
+        "secondDose": "-",
+        "firstDate": "24/4/21",
+        "secondDate": "-"
       },
       {
         "id": 14,
@@ -138,7 +164,9 @@
         "age": "41",
         "vaccinateStatus": "Second dose",
         "firstDose": "Oxford",
-        "secondDose": "Oxford"
+        "secondDose": "Oxford",
+        "firstDate": "6/8/21",
+        "secondDate": "21/5/22"
       },
       {
         "id": 15,
@@ -148,7 +176,9 @@
         "age": "24",
         "vaccinateStatus": "Second dose",
         "firstDose": "Janssen",
-        "secondDose": "Moderna"
+        "secondDose": "Moderna",
+        "firstDate": "12/1/21",
+        "secondDate": "13/6/21"
       }
     ]
   }
