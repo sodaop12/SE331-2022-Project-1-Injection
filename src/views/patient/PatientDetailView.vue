@@ -3,20 +3,25 @@
   <p>Address: {{ patient.homeTown }}</p>
   <p>Age: {{ patient.age }}</p>
   <p>Number of dose: {{ patient.vaccinateStatus }}</p>
-  <reviewlist v-if="reviews.length" :reviews="reviews"></reviewlist>
+  <reviewlist v-if="GStore.reviews.length" :reviews="reviews"></reviewlist>
   <reviewform @review-submited="addReview"></reviewform>
 </template>
 
 <script>
 import reviewform from "@/components/ReviewForm.vue";
 import reviewlist from "@/components/ReviewList.vue";
+import { computed } from "@vue/reactivity";
 export default {
-  props: ["patient"],
+  props: ["id", "patient"],
   inject: ["GStore"],
   data() {
     return {
-      reviews: [],
       activeClass: true,
+    };
+  },
+  provide() {
+    return {
+      message: computed(() => this.reviews),
     };
   },
   components: {
@@ -25,7 +30,7 @@ export default {
   },
   methods: {
     addReview(review) {
-      this.reviews.push(review);
+      this.GStore.reviews.push(review);
       this.GStore.flashMessage =
         "Your review have been submitted to " +
         this.patient.name +

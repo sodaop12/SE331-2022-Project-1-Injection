@@ -2,7 +2,7 @@
   <div class="review-container">
     <h3>Reviews:</h3>
     <ul>
-      <li v-for="(review, index) in reviews" :key="index">
+      <li v-for="(review, index) in GStore.reviews" :key="index">
         doctor {{ review.name }} gave this review for this patient
         <br />
         "{{ review.review }}"
@@ -14,11 +14,7 @@
 
 <script>
 export default {
-  props: {
-    reviews: {
-      type: Array,
-      required: true,
-    },
-  },
+  inject: ["GStore"],
+  props: ["id"],
 };
 </script>

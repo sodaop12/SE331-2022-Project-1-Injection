@@ -13,10 +13,12 @@
 
 <script>
 export default {
+  inject: ["GStore"],
   data() {
     return {
       name: "",
       review: "",
+      patientID: null,
     };
   },
   methods: {
@@ -28,6 +30,7 @@ export default {
       let productReview = {
         name: this.name,
         review: this.review,
+        patientID: this.GStore.patient.id,
       };
       this.$emit("review-submited", productReview);
       this.name = "";
