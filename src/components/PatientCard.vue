@@ -32,6 +32,7 @@ export default {
   border-radius: 25px;
   border: 4px solid #68b856;
   margin-bottom: 18px;
+  background-color: rgb(216, 255, 62);
 }
 
 .patient-card:hover {

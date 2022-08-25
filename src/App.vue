@@ -19,11 +19,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0db31b;
+  background-color: rgb(239, 255, 208);
 }
 
 nav {
   padding: 30px;
+  border-style: solid;
+  border-color: rgb(59, 186, 116);
+  border-radius: 25px;
+  background-color: rgb(59, 186, 116);
 }
 
 nav a {
@@ -32,12 +37,12 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #aeff00;
 }
 
 @keyframes yellowfade {
   from {
-    background: yellow;
+    background: rgb(255, 0, 0);
   }
   to {
     background: transparent;
