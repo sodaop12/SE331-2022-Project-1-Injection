@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .patient-card {
   padding: 20px;
-  width: 250px;
+  width: 600px;
   cursor: pointer;
   border-radius: 25px;
   border: 4px solid #68b856;
