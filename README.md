@@ -4,7 +4,11 @@
 632115043 Suradit Luo
 632115026 Nantipak tathong
 ```
+# website link 
 
+```
+http://52.0.124.81:8002/
+```
 
 ## Project setup
 ```
