@@ -29,7 +29,8 @@ export default {
   padding: 20px;
   width: 250px;
   cursor: pointer;
-  border: 1px solid #39495c;
+  border-radius: 25px;
+  border: 4px solid #68b856;
   margin-bottom: 18px;
 }
 
@@ -39,7 +40,7 @@ export default {
 }
 
 .patient-link {
-  color: #2c3e50;
+  color: #036036;
   text-decoration: none;
 }
 </style>
