@@ -29,6 +29,7 @@ nav {
   border-color: rgb(59, 186, 116);
   border-radius: 25px;
   background-color: rgb(59, 186, 116);
+  border-style: outset;
 }
 
 nav a {

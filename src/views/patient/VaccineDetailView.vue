@@ -27,7 +27,8 @@ th,
 td {
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  border: 2px solid rgb(255, 159, 207);
+  border-radius: 6px;
 }
 div {
   display: table-row;
