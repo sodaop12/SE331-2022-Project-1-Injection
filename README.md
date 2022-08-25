@@ -1,4 +1,10 @@
-# project
+# SE331-2022-project-1
+```
+632115042 Saiphirun prommijit
+632115043 Suradit Luo
+632115026 Nantipak tathong
+```
+
 
 ## Project setup
 ```
