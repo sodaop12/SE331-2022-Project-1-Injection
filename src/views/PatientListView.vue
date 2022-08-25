@@ -99,7 +99,11 @@ export default {
 .pagination a {
   flex: 1;
   text-decoration: none;
-  color: #2c3e50;
+  color: #aeff00;
+  border-radius: 25px;
+  background-color: rgb(59, 186, 116);
+  border-style: outset;
+  text-align: center;
 }
 #page-prev {
   text-align: left;
